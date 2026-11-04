@@ -3,14 +3,41 @@
     <head>
         <title>Html Advanced Notes</title>
         <meta charset="UTF-8">
+        <style>
+            /* cascading style sheets 
+            1. selector => says what to change
+            2. declaration
+                a. property => what about the elememt to change
+                b. value => how to change it
+            */
+            body{
+                color:rgb(143, 171, 197);
+                background-color:#ffffff ;
+                border: solid 5px #000000;
+            }
+            h1{
+                text-align: center;
+            }
+            #even{
+                color:rgba(107, 4, 4, 0.589);
+                text-decoration: underline;
+            }
+            .lists{
+                width: 50%;
+                background-color: rgb(14, 42, 165);
+                border-radius: 5px;
+                font-size: 2rem;
+            }
+        </style>
     </head>
     <body>
         <h1>Html Advanced Notes</h1>
-        <h3>Lists.</h3>
+        <h3>Lists.</h3> 
+        <div class="lists">
         <ol type="I">
             <li>Valerie</li>
-            <li>Yaretzi</li>
-            <li>Malia</li>
+            <li id="even">Yaretzi</li>
+            <li id="even">Malia</li>
             <li>Gali</li>
         </ol>
         <ul>
@@ -23,18 +50,19 @@
         <dl>
             <dt>Fall</dt>
             <dd>Halloween</dd>
-            <dd>Thanksgiving</dd>
-            <dt>Winter</dt>
-            <dd>Christmas</dd>
+            <dd id="even">Thanksgiving</dd>
+            <dt id="even">Winter</dt>
+            <dd id="even">Christmas</dd>
             <dd>Hanukkah</dd>
-            <dd>New Years Eve</dd>
+            <dd id="even">New Years Eve</dd>
         </dl>
+        </div>
         <h3>Attributes</h3>
         <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgmhuUGe1dgbcRGOiicsycJVN0pRTuVfeg04aWm0za-A&s" target="_blank">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgmhuUGe1dgbcRGOiicsycJVN0pRTuVfeg04aWm0za-A&s" alt="Mt Timp" width="250px">
         <p>Image from: Flickr user a4gpa</p><div>
         </div>
         <img src="white_puppy.jpg" alt="A dog" width="250px"></a>
-        <p> image from here <a href="https://www.pickpik.com/dog-puppy-dogs-pet-animals-doggy-44970" target="_blank"> </a></p>
+        <p> <a href="https://www.pickpik.com/dog-puppy-dogs-pet-animals-doggy-44970" target="_blank">image from here  </a></p>
     </body>
 </html>
