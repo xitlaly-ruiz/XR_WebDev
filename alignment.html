@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+<title></title>
+        <meta charset="UTF-8">
+		<style>
+            #box{
+                height: 75px;
+                width: 75px;
+                background-color:hotpink;
+                color:aliceblue;
+                text-align: center;
+                /*margin: 0 auto;*/
+            }
+            #grid-wrapper{
+                display: grid;
+                grid-template-columns: 2fr 1fr 100px;
+            }
+            button{
+                margin-top: 25px;
+                padding: 25px;
+                gap: 5px;
+            }
+            #flex-wrapper{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+		</style>
+    </head>
+<body>
+    <h1>Alignment Notes</h1>
+    <div id="grid-wrapper">
+        <div id="box">
+            <p>box 1</p>
+        </div>
+        <div id="box">
+            <p>box 2</p>
+        </div>
+        <div id="box">
+            <p>box 3</p>
+        </div>
+        <div id="box">
+            <p>box 4</p>
+        </div>
+    <div id="flex-wrapper">
+        <div id="box">
+            <p>box 1</p>
+        </div>
+        <div id="box">
+            <p>box 2</p>
+        </div>
+        <div id="box">
+            <p>box 3</p>
+        </div>
+        <div id="box">
+            <p>box 4</p>
+        </div>
+    <button>Click Me!</button>   
+</body>
+</html>
