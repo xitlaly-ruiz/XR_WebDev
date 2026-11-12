@@ -21,19 +21,23 @@
                 gap: 5px;
             }
             #flex-wrapper{
-                display: flex;
+                display: none;
                 flex-direction: row;
                 justify-content: flex-end;
                 align-items: center;
                 flex-wrap: wrap;
             }
+            img{
+                width: 200px;
+            }
 		</style>
     </head>
 <body>
     <h1>Alignment Notes</h1>
+    <img src="https://contributor.pond5.com/wp-content/uploads/sites/4/2022/03/96810062-emerald-lake-cinemagraph-canada-time-lapse-looping-scaled.jpg" alt ="nature view" id = "nature" onmouseout="rotate()">
     <div id="grid-wrapper">
-        <div id="box">
-            <p>box 1</p>
+        <div id="box" onmouseover="showHide()">
+            <p id = "text">Show More</p>
         </div>
         <div id="box">
             <p>box 2</p>
@@ -57,6 +61,40 @@
         <div id="box">
             <p>box 4</p>
         </div>
-    <button>Click Me!</button>   
+    <input type ="color" id="newColor">
+    <br>
+    <button onclick="changeColor()">Click Me!</button>
+    
+    <script>
+        let images = ["https://thumbs.dreamstime.com/b/beautiful-nature-norway-natural-landscape-fjord-mountain-amazing-view-reflection-location-scandinavian-mountains-artistic-143998386.jpg", "https://visitmontrose.com/wp-content/uploads/2025/06/owlcreek2.jpg"]
+        let currentimage = 0
+        function rotate(){
+            if (currentimage > 3){
+                currentimage = 0
+            }
+            currentimage += 1
+            document.getElementById("nature").src = images[currentimage]
+            
+        }
+        function changeColor(){
+            let currentColor= document.getElementById ("newColor").value
+            document.getElementById("box").style.
+            backgroundColor = currentColor
+
+        }
+        function showHide(){
+            let item = document.getElementById("flex-wrapper")
+            if(item.style.display == "flex"){
+                item.style.display = "none"
+                document.getElementById("text").
+                innerHTML = "Show More"
+            }else{
+                item.style.display = "flex" // block, flex, none, grid
+                document.getElementById("text").
+                innerHTML = "Show Less"
+            }
+
+        }
+    </script>
 </body>
 </html>
