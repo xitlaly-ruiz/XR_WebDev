@@ -70,5 +70,26 @@
         <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cc6b409e-b491-4122-bb1c-6173c4f5d1c2/d3r7rrz-353a7bfb-9872-4640-bc13-1b567da48e85.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9jYzZiNDA5ZS1iNDkxLTQxMjItYmIxYy02MTczYzRmNWQxYzIvZDNyN3Jyei0zNTNhN2JmYi05ODcyLTQ2NDAtYmMxMy0xYjU2N2RhNDhlODUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.xrA3hEK-TAWKp2utTQU_Xk-aVL8g7o9HKx2G8HrWAw4" alt="A Harry Potter image" class="picture2"></a>
         <p>image from deviantart</p>
         </div>
+        <img src="https://contributor.pond5.com/wp-content/uploads/sites/4/2022/03/96810062-emerald-lake-cinemagraph-canada-time-lapse-looping-scaled.jpg" alt ="nature view" id = "nature" onmouseout="rotate()">
+        <div id="box" onmouseover="showHide()">
+            <p id = "text">Show More</p>
+
+            </div>
+        <button>Click Me!</button>
+        <script>
+            function showHide(){
+            let item = document.getElementById("flex-wrapper")
+            if(item.style.display == "flex"){
+                item.style.display = "none"
+                document.getElementById("text").
+                innerHTML = "Show More"
+            }else{
+                item.style.display = "flex"
+                document.getElementById("text").
+                innerHTML = "Show Less"
+            }
+
+        }
+        </script>
     </body>
 </html>
