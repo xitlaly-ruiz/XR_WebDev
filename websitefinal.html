@@ -1,18 +1,156 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang = "en">
     <head>
         <title>Fun amusment park in Utah to visit!</title>
         <meta charset="UTF-8">
+
+        <style>
+            body{
+                color:rgba(16, 17, 17, 0.733);
+                background-color:#a6d6f1;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                padding:15px;
+            }
+
+            h1{
+                text-align: center;
+            }
+
+            h3{
+                margin:10px;
+            }
+
+            p{
+                margin:20px;
+            }
+
+            .image1{
+                width:500px;
+                margin-top:30px;
+                margin-bottom:15px;
+            }
+
+            .picture2{
+                width:400px;
+                margin-top:30px;
+                margin-bottom:15px;
+            }
+
+            .image6{
+                width:400px;
+            }
+
+            .list{
+                margin-top:60px;
+            }
+
+            .lagoonpicture{
+                display:flex;
+                justify-content:flex-end;
+            }
+
+            #extrapart{
+                display:none;
+            }
+
+            #harrypotter{
+                width:300px;
+            }
+
+        </style>
     </head>
+
     <body>
-        <h1>Lagoon</h1>
+
+        <h1>Lagoon Amusement Park</h1>
+        <hr>
+
+        <h3>What is<a href="https://www.lagoonpark.com/" target="_blank"> Lagoon</a>?</h3>
+
         <p>
             Lagoon is a place in Farmington, Utah that is an enjoyable amusement park to many people. Lagoon is located In northern Utah where the weather is hotter and the landscape is more green.<br>Lagoon has many trees and plants and they are very helpful for shade. It also has animals walking through the park like peacocks.Lagoon has many fun rides that many people love riding. These are some reasons that it would be a good idea to visit!
         </p>
-        
-        <h3>-Sub Header-</h3>
-        <p>
 
-        </p>
+        <div class = "list">
+            <h2><em>Reasons that you should visit</em></h2>
+            <ol>
+                <li>Lagoon is family friendly and has many rides for younger kids to go on</li>
+                <li>Lagoon has many fast and fun rides like cannibal that goes up to 70 miles per hour!</li>
+                <li>Lagoon is a good place to visit with your friends because many of the rides are multiseater rides</li>
+                <li>Lagoon has lots trees providing you with lots of shade on hot and sunny dayd</li>
+                <li>Lagoon has many great food and desert spots that are very good and yummy</li>
+
+
+            </ol>
+        </div>
+        <h3>Below are images of Lagoon!</h3>
+<div class="lagoonpicture">
+            <img src="https://cdn.shopify.com/s/files/1/0623/3748/3003/files/Lagoon-Park-ARMOR-X-Microsoft-Surface-Pro-7-7-Plus-6-5-4-Ultra_-3-Layers-Shockproof-Rugged-Case-With-VESA-75x75mm-Mounting-Holes-Kick-stand_2.jpg?v=1775036570"alt="Lagoon picture" class="picture2">
+            <p>Image from ARMOR-X</p>
+        </div>
+        <img src="https://s3.us-west-2.amazonaws.com/assets.eastidahonews.com/wp-content/uploads/2021/03/01091053/lagoon.jpg" alt="A picture of lagoon" class="image1">
+
+        <p>Image from East Idano News</p>
+        <hr>
+
+        
+
+        <h3>Harry Potter, Ron, And Hermione</h3>
+
+        <img src="https://th.bing.com/th/id/OIP.qGywnhnFIa5xONklOI6WLQHaGx?w=185&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+        alt="Harry Potter image" id="harrypotter" onmouseover="rotate()" onmouseout="rotateBack()">
+
+        <p>Image sources from wallpapercave and pinterest</p>
+
+        <div id="extrapart">
+
+            <h3>Some things i like about Harry Potter</h3>
+
+            <p>
+                Harry Potter is a really interesting book because it has mystery, friendship, and many suspenseful/unexpected events. One of my favorite things about the book is seeing how Harry becomes closer with his friends throughout the story. I also love seeing him grow and become stronger overtime. I love that through all the strugles he faced he pushed through and overcame them. Even during the most difficult times, Harry never gave up and kept pushing and he was very determind throught the story. Harry potter is overall a really good book and its a book i would reccomned to many people.
+            </p>
+
+            <img src="https://images.ctfassets.net/usf1vwtuqyxm/ZYMcLjGl6Gh3FicESY9q3/dcc6bce1f3d9c52fd2fce3bc1098682a/Harry-Potter-2023-Paperbacks-Assets_Purple.jpg?w=1200&fit=fill&f=top"
+            alt="Harry Potter book" class="image6">
+
+            <p>Image from detroitchinatown</p>
+
+        </div>
+
+        <button onclick="showHide()" id="button">Show More</button>
+
+        <script>
+
+            let images = [
+                "https://th.bing.com/th/id/OIP.qGywnhnFIa5xONklOI6WLQHaGx?w=185&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+                "https://wallpapercave.com/wp/wp8548745.jpg"
+            ]
+
+            let currentimage = 0
+
+            function rotate(){
+                currentimage = 1
+                document.getElementById("harrypotter").src = images[currentimage]
+            }
+
+            function rotateBack(){
+                currentimage = 0
+                document.getElementById("harrypotter").src = images[currentimage]
+            }
+
+            function showHide(){
+                let item = document.getElementById("extrapart")
+
+                if(item.style.display == "block"){
+                    item.style.display = "none"
+                    document.getElementById("button").innerHTML = "Show More"
+                }else{
+                    item.style.display = "block"
+                    document.getElementById("button").innerHTML = "Show Less"
+                }
+            }
+
+        </script>
+
     </body>
 </html>
