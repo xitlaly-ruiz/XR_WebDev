@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang = "en">
     <head>
@@ -10,80 +12,87 @@
                 background-color:#a6d6f1;
                 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 padding:15px;
+                margin:15px;
+                display:flex;
+                flex-direction:column;
             }
 
             h1{
-                text-align: center;
+                text-align:center;
+                margin:20px;
             }
 
             h3{
-                margin:60px;
-                margin-bottom: 20px;
+                margin:30px;
+                margin-bottom:20px;
             }
 
             p{
                 margin:20px;
-
-             }
+                line-height:1.5;
+            }
 
             .lagoon2{
                 width:600px;
-                margin-top:30px;
-                margin-bottom:30px;
+                margin:20px;
             }
 
             .lagoon1{
                 width:600px;
-                margin-top:30px;
-                margin-bottom:30px;
+                margin:20px;
             }
+
             .lagoon3{
                 width:600px;
-                margin-top:30px;
-                margin-bottom:30px;  
+                margin:20px;
             }
 
             .lagoonextrapartimage{
                 width:400px;
-                margin-top:30px;
-                margin-bottom:15px;
+                margin:20px;
             }
 
             .list{
-                margin-top:60px;
-                margin-left:20px;
-                padding:15px;
+                display:flex;
+                flex-direction:column;
+                margin:20px;
+                padding:20px;
             }
 
             .lagoonpicture{
                 display:flex;
                 justify-content:flex-start;
-            	margin-top:30px;
-            	margin-bottom:20px;
+                align-items:center;
+                margin:20px;
+                padding:10px;
             }
+
             .otherpic{
                 display:flex;
                 justify-content:flex-start;
-                margin:30px;
-                margin:15px;
+                align-items:center;
+                margin:20px;
+                padding:10px;
             }
+
             #underline{
-                text-decoration: underline;
+                text-decoration:underline;
             }
 
             #extra{
                 display:none;
+                margin:20px;
+                padding:20px;
             }
 
             #lagoonpics{
                 width:700px;
-                margin-top:30px;
-                margin-bottom:20px;
+                margin:20px;
             }
+
             button{
-            	padding:15px;
-            
-            	}
+                padding:15px;
+            }
 
         </style>
     </head>
@@ -100,37 +109,56 @@
         </p>
 
         <div class = "list">
+
             <h2><em>Reasons that you should visit</em></h2>
+
             <ol>
                 <li>Lagoon is family friendly and has many rides for younger kids to go on</li>
+
                 <li>Lagoon has many fast and fun rides like cannibal that goes up to 70 miles per hour!</li>
+
                 <li>Lagoon is a good place to visit with your friends because many of the rides are multiseater rides</li>
-                <li>Lagoon has lots trees providing you with lots of shade on hot and sunny dayd</li>
+
+                <li>Lagoon has lots trees providing you with lots of shade on hot and sunny days</li>
+
                 <li>Lagoon has many great food and desert spots that are very good and yummy</li>
-
-
             </ol>
-        </div>
-        <h3><span id="underline">Below are images of Lagoon!</span></h3>
-<div class="lagoonpicture">
-            <img src="https://cdn.shopify.com/s/files/1/0623/3748/3003/files/Lagoon-Park-ARMOR-X-Microsoft-Surface-Pro-7-7-Plus-6-5-4-Ultra_-3-Layers-Shockproof-Rugged-Case-With-VESA-75x75mm-Mounting-Holes-Kick-stand_2.jpg?v=1775036570"alt="Lagoon picture" class="lagoon1">
-            <p>Image from ARMOR-X</p>
-        </div>
-        <img src="https://s3.us-west-2.amazonaws.com/assets.eastidahonews.com/wp-content/uploads/2021/03/01091053/lagoon.jpg" alt="A picture of lagoon" class="lagoon2">
 
-        <p>Image from East Idano News</p>
+        </div>
+
+        <h3><span id="underline">Below are images of Lagoon!</span></h3>
+
+        <div class="lagoonpicture">
+
+            <img src="https://cdn.shopify.com/s/files/1/0623/3748/3003/files/Lagoon-Park-ARMOR-X-Microsoft-Surface-Pro-7-7-Plus-6-5-4-Ultra_-3-Layers-Shockproof-Rugged-Case-With-VESA-75x75mm-Mounting-Holes-Kick-stand_2.jpg?v=1775036570"
+            alt="Lagoon picture" class="lagoon1">
+
+            <p>Image from ARMOR-X</p>
+
+        </div>
+
+        <img src="https://s3.us-west-2.amazonaws.com/assets.eastidahonews.com/wp-content/uploads/2021/03/01091053/lagoon.jpg"
+        alt="A picture of lagoon" class="lagoon2">
+
+        <p>Image from East Idaho News</p>
 
         <div class="otherpic">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG--doytwFrfA10hw2xs165O1jKqsdA5a6AOwV9gZSSxRPdbF4010s6-Q&s=10" class="lagoon3">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG--doytwFrfA10hw2xs165O1jKqsdA5a6AOwV9gZSSxRPdbF4010s6-Q&s=10"
+            class="lagoon3">
+
             <p>Image from Flickr</p>
+
         </div>
+
         <hr>
 
         <h3>Two of Lagoons most popular rides! <br>(Hover over and see!)
         </h3>
 
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA9Jl9x8p24a3r3GA4XrPfmeWSuoOHWs33naX7MR4odQ&s=10"
-        alt="Lagoon image" id="lagoonpics" onmouseover="rotate()" onmouseout="rotateBack()">
+        alt="Lagoon image" id="lagoonpics"
+        onmouseover="rotate()" onmouseout="rotateBack()">
 
         <p>Images from Deep Arrival</p>
 
@@ -154,7 +182,8 @@
         <script>
 
             let images = [
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA9Jl9x8p24a3r3GA4XrPfmeWSuoOHWs33naX7MR4odQ&s=10",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA9Jl9x8p24a3r3GA4XrPfmeWSuoOHWs33naX7MR4odQ&s=10",
+
                 "https://deeparrival.com/wp-content/uploads/2026/11/da-pgr-b08-2926fc92d37d1c3a-937dd2eb9dc5707954e5.jpg"
             ]
 
